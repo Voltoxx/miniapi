@@ -29,8 +29,8 @@
         event.preventDefault();
 
         const sla = document.getElementById('sla').value;
-        // const period = document.getElementById('period').value;
-        const period = 'weekly';
+        const period = document.getElementById('period').value;
+        // const period = 'weekly';
 
         const response = await fetch('/.netlify/functions/sla', {
             method: 'POST',
